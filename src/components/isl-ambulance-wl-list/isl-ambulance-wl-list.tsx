@@ -1,7 +1,4 @@
 import { Component, Host, h } from '@stencil/core';
-import '@material/web/list/list'
-import '@material/web/list/list-item'
-import '@material/web/icon/icon'
 
 @Component({
   tag: 'isl-ambulance-wl-list',
@@ -57,7 +54,7 @@ export class IslAmbulanceWlList {
       </Host>
     );
   }
-  
+
   private isoDateToLocale(iso:string) {
     if(!iso) return '';
     return new Date(Date.parse(iso)).toLocaleTimeString()
